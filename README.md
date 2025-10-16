@@ -96,32 +96,19 @@ error = calculateLinePosition();
 adjustment = Kp * error + Ki * integral + Kd * derivative;
 setMotorSpeeds(baseSpeed ± adjustment);
 Team Members
-[Team Member 1 Name] - Embedded Programming
+[Bhavya Desai] - Testing & Validation & Leader
 
-[Team Member 2 Name] - Hardware Design
+[Vedant Thakkar] - Testing & Calibration
 
-[Team Member 3 Name] - Algorithm Development
+[Dhruvkumar Shingala] - Hardware Design
 
-[Team Member 4 Name] - Testing & Validation
+[Harsh Patel] - Algorithm Development
 
-Competition Performance
-1st Place - [Competition Name, Date]
+[Karan Prajapati] - Embedded Programming
 
-Best Algorithm - [Award Name, Date]
+Guidance
 
-Fastest lap time: [Time] seconds
-
-Reliability: [X]% completed runs
-
-Documentation
-Full Technical Documentation
-
-Circuit Schematics
-
-Troubleshooting Guide
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+[Rudra Prajapati] - mentor & guide for Programming and Algorithm Development
 
 Acknowledgments
 Thanks to our mentors and technical advisors
