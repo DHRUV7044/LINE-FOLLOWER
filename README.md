@@ -134,4 +134,3 @@ Team Abhimanyu - Engineering Excellence in Robotics
 
 For questions or collaborations, please contact: [team.abhimanyu@email.com]
 
-This response is AI-generated, for reference only.
