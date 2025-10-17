@@ -106,9 +106,7 @@ Team Members
 
 [Karan Prajapati] - Embedded Programming
 
-Guidance
-
-[Rudra Prajapati] - mentor & guide for Programming and Algorithm Development
+[Rudra Prajapati] - Programming and Algorithm Development
 
 Acknowledgments
 Thanks to our mentors and technical advisors
