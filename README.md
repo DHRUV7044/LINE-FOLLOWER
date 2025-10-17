@@ -117,5 +117,5 @@ Open-source community for inspiration and resources
 
 Team Abhimanyu - Engineering Excellence in Robotics
 
-For questions or collaborations, please contact: [team.abhimanyu@email.com]
+For questions or collaborations, please contact: [teamabhimanyu18@gmail.com]
 
