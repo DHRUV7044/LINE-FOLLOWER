@@ -95,7 +95,9 @@ cpp
 error = calculateLinePosition();
 adjustment = Kp * error + Ki * integral + Kd * derivative;
 setMotorSpeeds(baseSpeed ± adjustment);
+
 Team Members
+
 [Bhavya Desai] - Testing & Validation & Leader
 
 [Vedant Thakkar] - Testing & Calibration
