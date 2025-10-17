@@ -32,7 +32,7 @@ void setup() {
 
 void loop() {
   int position = readSensors();
-  int error = position - 2000; // Center position=2
+  int error = position - 2000; // Center position=2000
 
   int proportional=error;
   integral += error;
