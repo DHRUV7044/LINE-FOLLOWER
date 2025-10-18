@@ -39,7 +39,7 @@ void loop() {
   int derivative = error - lastError;
   lastError = error;
 
-  int correction = Kp * proportional + Ki * integral + Kd * derivative;
+  int correction = Kp * proportional + Ki * integral + Kd * derivative;//Error equation
 
   int baseSpeed = 150;
 
