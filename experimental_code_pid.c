@@ -7,10 +7,14 @@
 const int sensors[5] = {A0, A1, A2, A3, A4};
 
 // PID Constants
-const double Kp= 1.5;  // Proportional Gain
-const double Ki = 0.005;   // Integral Gain
-const double Kd = 2.0;  // Derivative Gain
-
+const float Kp= 1.5;  // Proportional Gain
+const float Ki = 0.005;   // Integral Gain
+const float Kd = 2.0;  // Derivative Gain
+// Configuration
+const int BASE_SPEED = 150;
+const int SENSOR_THRESHOLD = 500;
+const int CENTER_POSITION = 2000;
+const int INTEGRAL_LIMIT = 10000;
 // PID Variables
 int lastError = 0;
 float integral = 0;
@@ -31,17 +35,17 @@ void setup() {
 }
 
 void loop() {
-  int position = readSensors();
-  int error = position - 2000; // Center position=2000
+ int position = readSensors();
+ int error = position - CENTER_POSITION;
 
-  int proportional=error;
-  integral += error;
-  int derivative = error - lastError;
-  lastError = error;
+float proportional = error;
+integral += error;
+float derivative = error - lastError;
+lastError = error;
 
-  int correction = Kp * proportional + Ki * integral + Kd * derivative;//Error equation
+float correction = Kp * proportional + Ki * integral + Kd * derivative;
 
-  int baseSpeed = 150;
+int baseSpeed = BASE_SPEED;
 
   int leftSpeed = baseSpeed + correction;
   int rightSpeed = baseSpeed - correction;
@@ -56,7 +60,7 @@ int readSensors() {
   int SensorNumber[5] = {0, 1000, 2000, 3000, 4000};
   int sum = 0;
   int total = 0;
-  int th=500;
+  int th = SENSOR_THRESHOLD;
   for (int i = 0; i < 5; i++) {
     int sensorValue = analogRead(sensors[i]) > th ? 1 : 0;
     sum += sensorValue * SensorNumber[i];
