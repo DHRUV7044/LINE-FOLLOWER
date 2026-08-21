@@ -40,6 +40,8 @@ void loop() {
 
 float proportional = error;
 integral += error;
+integral = constrain(integral, -INTEGRAL_LIMIT, INTEGRAL_LIMIT);  //This prevents the integral 
+  //term from growing without bound when the robot remains away from the line.
 float derivative = error - lastError;
 lastError = error;
 
